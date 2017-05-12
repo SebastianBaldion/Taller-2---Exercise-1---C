@@ -1,33 +1,17 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#include <stdio.h>
+#include <stdlib.h>
 
-# Precompiled Headers
-*.gch
-*.pch
+int main(){
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    double x1, y1, x2, y2, p1, p2, distancia;
+    printf("Ingresa los valores separando 0con enter: \n");
+    scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+    p1 = x2 - x1;
+    p2 = y2 - y1;
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+    distancia = y1-x1;
+    printf("La distancia minima entre tus valores:  %4lf \n", distancia);
 
-# Debug files
-*.dSYM/
-*.su
+    return 0;
+}
